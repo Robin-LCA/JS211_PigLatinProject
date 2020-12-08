@@ -36,9 +36,10 @@ if (typeof describe === 'function') {
     it('should translate a simple word', () => {
       assert.equal(pigLatin('car'), 'arcay');
       assert.equal(pigLatin('dog'), 'ogday');
+      assert.equal(pigLatin('bunny'), 'unnybay');
     });
     it('should translate a complex word', () => {
-      assert.equal(pigLatin('create'), 'eatecray');
+      assert.equal(pigLatin('create'), 'reatecay');
       assert.equal(pigLatin('valley'), 'alleyvay');
     });
     it('should attach "yay" if word begins with vowel', () => {
